@@ -7,8 +7,8 @@ const { test, expect, describe } = require("@playwright/test");
 const mainPageUrl = `http://localhost:${liveServerPort}/`;
 const cleanArrFromEmptyItems = (arr) => arr.filter((item) => item !== "");
 
-test.beforeEach(async ({ page }) => {
-  await page.goto(mainPageUrl);
+test .beforeEach(async ({ page }) => {
+  await page .goto(mainPageUrl);
 });
 
 describe("Environment and Global document's level tests", () => {
